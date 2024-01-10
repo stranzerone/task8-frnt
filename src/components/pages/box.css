@@ -1,0 +1,181 @@
+/* .profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem 0 1rem 1rem ;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    padding: 20px;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .email,
+  .phone {
+    margin: 0;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .update-btn,
+  .delete-btn {
+    padding: 10px;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .update-btn:hover,
+  .delete-btn:hover {
+    background-color: #2980b9;
+  }
+   */
+
+
+
+
+
+
+   .container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .dis{
+    color: #283048;
+    font-weight: 300;
+font-size: .7rem;  }
+  .box {
+  width: 25vw;
+    display: flex;
+  
+    margin: .4rem .8rem;
+  }
+  
+  .profile-card {
+    width: 25vw;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 5px 5px 10px 5px  rgb(40, 38, 38);
+    border-radius: 1rem;
+
+  }
+  .avatar {
+    width: 10rem;
+    display: flex;
+   text-align: center;
+   margin: .5rem auto;
+    border: .2rem solid rgb(223, 193, 193);
+    height: 150px;
+    border-radius: 50%;
+ 
+    object-fit: cover;
+  }
+  
+  .user-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .user-info h2 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .user-info p {
+    margin: 0;
+    color: #e7d4d4;
+    font-size: auto;
+    
+  }
+  
+  .gender-icon {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #3498db;
+  }
+  
+  .pagination {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+
+.pagination button{
+    margin-left: 1rem;
+    width: 1.3rem; 
+    border-radius: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+button{
+  width: auto;
+  height: 2.2rem;
+ 
+  margin-bottom: .7rem;
+}
+
+.buttons button{
+  background-color: #191f4e;
+  background-image: linear-gradient(135deg, #191f4e 0%, #000025 100%);
+  font-weight: 700;
+  font-size: .7rem;
+  justify-content: space-between;
+  width: 5rem;
+  color: white;
+  box-shadow: .1rem .1rem .1rem .1rem rgb(65, 63, 63);
+border-radius: 1rem;
+margin-left: 1rem;
+float: auto;
+}
+
+
+
+@media (max-width:426px) {
+  .profile-card{
+width: 80vw;
+  }
+
+  .box{
+    width: 80vw;
+  }
+  
+}
