@@ -32,6 +32,17 @@
     margin-top: 5px;
   }
   
+
+.buttons1{
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.sButton{
+width: 4rem;
+}
+
   button {
     background-color: #4caf50;
     color: #fff;

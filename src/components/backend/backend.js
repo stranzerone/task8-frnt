@@ -19,6 +19,7 @@ export const login =async(email,password)=>{
     const send= await axios.post(`${backend}/login`,{email:email,password:password,type:"user"})
     console.log(send.data)
     localStorage.setItem('token',send.data)
+    console.log(send.status)
     return send;
     }
 

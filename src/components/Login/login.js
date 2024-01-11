@@ -8,6 +8,8 @@ const Login = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
   const [password, setPassword] = useState('');
  const navigate = useNavigate()
+const [warning,setWarning] =useState(Boolean)
+
   const handleLogin = async () => {
     try {
     
@@ -15,12 +17,21 @@ const Login = () => {
 
     if(send.status===200){
     navigate('/access')
+    }else{
+      setWarning(true)
     }
       // You can handle successful login, e.g., redirect to another page
     } catch (error) {
       console.error('Error during login:', error);
     }
   };
+
+
+const handleSignUp =()=>{
+
+navigate("/signUp")
+
+}
 
   return (
     <div className="auth-container">
@@ -33,7 +44,15 @@ const Login = () => {
         <label>Password:</label>
         <input type="password" onChange={(e) => setPassword(e.target.value)} />
       </div>
+      {warning?<div>You Have Entered Wrong Details</div>:null}
+
+      <div className='buttons1'>
+
       <button onClick={handleLogin}>Login</button>
+
+<button className='sButton' onClick={handleSignUp}>Create</button>
+
+      </div>
     </div>
   );
 };
